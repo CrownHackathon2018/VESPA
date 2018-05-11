@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Viknum:</strong>
+  <%= @master.viknum %>
+</p>
+
+<p>
+  <strong>Vikenvironment:</strong>
+  <%= @master.vikEnvironment %>
+</p>
+
+<p>
+  <strong>Promenvironment:</strong>
+  <%= @master.promEnvironment %>
+</p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @master.userID %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @master.comment %>
+</p>
+
+<p>
+  <strong>Reqdt:</strong>
+  <%= @master.reqdt %>
+</p>
+
+<%= link_to 'Edit', edit_master_path(@master) %> |
+<%= link_to 'Back', masters_path %>

@@ -1,0 +1,2 @@
+class VikEnv < ApplicationRecord
+end

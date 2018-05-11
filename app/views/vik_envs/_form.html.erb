@@ -1,0 +1,27 @@
+<%= form_with(model: vik_env, local: true) do |form| %>
+  <% if vik_env.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(vik_env.errors.count, "error") %> prohibited this vik_env from being saved:</h2>
+
+      <ul>
+      <% vik_env.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :environment %>
+    <%= form.text_field :environment, id: :vik_env_environment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :vik_env_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

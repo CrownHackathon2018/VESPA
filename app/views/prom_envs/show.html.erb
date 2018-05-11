@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Environment:</strong>
+  <%= @prom_env.environment %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @prom_env.description %>
+</p>
+
+<%= link_to 'Edit', edit_prom_env_path(@prom_env) %> |
+<%= link_to 'Back', prom_envs_path %>

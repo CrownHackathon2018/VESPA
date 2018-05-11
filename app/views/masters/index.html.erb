@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Current Configurations</h1>
+
+<div class="configs">
+
+<% @masters.each do |master| %>
+  <%= link_to edit_master_path(master) do %>
+  <div class="vikContainer">
+    <h1><%= master.viknum %></h1>
+    <br>
+    <br>
+    <div>Vik DB:<%= master.vikEnvironment %></div>
+    <div>Promotions DB:<%= master.promEnvironment %></div>
+    <div> Required Until: <%= master.reqdt %></div>
+    <br>
+    <div><%= master.comment %></div>
+    <br>
+    <div>Updated At: </div>
+    <div><%= master.updated_at %></div>
+
+  </div>
+  <% end %>
+<% end %>
+
+<%= link_to 'New Master', new_master_path %>

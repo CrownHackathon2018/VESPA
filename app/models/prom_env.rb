@@ -1,0 +1,2 @@
+class PromEnv < ApplicationRecord
+end

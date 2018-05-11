@@ -1,0 +1,47 @@
+<%= form_with(model: master, local: true) do |form| %>
+  <% if master.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(master.errors.count, "error") %> prohibited this master from being saved:</h2>
+
+      <ul>
+      <% master.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :viknum %>
+    <%= form.text_field :viknum, id: :master_viknum %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vikEnvironment %>
+    <%= form.text_field :vikEnvironment, id: :master_vikEnvironment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :promEnvironment %>
+    <%= form.text_field :promEnvironment, id: :master_promEnvironment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :userID %>
+    <%= form.text_field :userID, id: :master_userID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_area :comment, id: :master_comment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reqdt %>
+    <%= form.date_select :reqdt, id: :master_reqdt %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

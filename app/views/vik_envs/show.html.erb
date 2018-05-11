@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Environment:</strong>
+  <%= @vik_env.environment %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @vik_env.description %>
+</p>
+
+<%= link_to 'Edit', edit_vik_env_path(@vik_env) %> |
+<%= link_to 'Back', vik_envs_path %>

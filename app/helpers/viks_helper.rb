@@ -1,0 +1,2 @@
+module ViksHelper
+end

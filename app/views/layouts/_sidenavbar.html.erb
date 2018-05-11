@@ -1,0 +1,17 @@
+<div id="sidenav" style="display: block;">
+
+  <img src="https://gamblerspro.com/wp-content/uploads/2016/10/crown-melbourne.png" style="width:200px">
+
+  <ul>
+    <li><%= link_to "Home", root_path%></li>
+    <hr>
+    <% @viks = Vik.all %>
+    <% @viks.each do |vik| %>
+    <%= link_to edit_master_path(vik) do %>
+      <li><%= vik.name %> </li>
+    <% end %>
+    <hr>
+  <% end %>
+  </ul>
+
+</div>

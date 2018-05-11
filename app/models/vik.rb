@@ -1,0 +1,2 @@
+class Vik < ApplicationRecord
+end

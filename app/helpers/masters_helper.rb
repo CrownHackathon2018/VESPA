@@ -1,0 +1,3 @@
+module MastersHelper
+
+end

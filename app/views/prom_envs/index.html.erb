@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prom Envs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Environment</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prom_envs.each do |prom_env| %>
+      <tr>
+        <td><%= prom_env.environment %></td>
+        <td><%= prom_env.description %></td>
+        <td><%= link_to 'Show', prom_env %></td>
+        <td><%= link_to 'Edit', edit_prom_env_path(prom_env) %></td>
+        <td><%= link_to 'Destroy', prom_env, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prom Env', new_prom_env_path %>

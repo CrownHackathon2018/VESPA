@@ -1,0 +1,27 @@
+<%= form_with(model: prom_env, local: true) do |form| %>
+  <% if prom_env.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(prom_env.errors.count, "error") %> prohibited this prom_env from being saved:</h2>
+
+      <ul>
+      <% prom_env.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :environment %>
+    <%= form.text_field :environment, id: :prom_env_environment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :prom_env_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

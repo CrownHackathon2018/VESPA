@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Vik Envs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Environment</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vik_envs.each do |vik_env| %>
+      <tr>
+        <td><%= vik_env.environment %></td>
+        <td><%= vik_env.description %></td>
+        <td><%= link_to 'Show', vik_env %></td>
+        <td><%= link_to 'Edit', edit_vik_env_path(vik_env) %></td>
+        <td><%= link_to 'Destroy', vik_env, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vik Env', new_vik_env_path %>

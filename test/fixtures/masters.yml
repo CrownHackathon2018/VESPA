@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  viknum: MyString
+  vikEnvironment: MyString
+  promEnvironment: MyString
+  userID: MyString
+  comment: MyText
+  reqdt: 2018-05-11
+
+two:
+  viknum: MyString
+  vikEnvironment: MyString
+  promEnvironment: MyString
+  userID: MyString
+  comment: MyText
+  reqdt: 2018-05-11
