@@ -140,9 +140,9 @@ class MastersController < ApplicationController
   </exceptionHandling>
   <dataConfiguration defaultDatabase="VIKDb" />
   <connectionStrings>
-    <add name="VIKDb" connectionString="Data Source=#{@vikDB};User Id=VIKDbUser;Password=Crown@123;Connect Timeout=30;pooling='true'; Max Pool Size=200;" providerName="System.Data.SqlClient" />
-	  <add name="LoggingDb" connectionString="Data Source=SQL2014-TEST;Initial Catalog=VIK_Applogging;User Id=AppLoggingDbUser;Password=Crown@123;Connect Timeout=30;pooling='true'; Max Pool Size=200;" providerName="System.Data.SqlClient" />
-	  <add name="PromotionsDb" connectionString="Data Source=#{@promDB};User Id=vik_user;Password=pr0m0ti0n;Connect Timeout=30;pooling='true'; Max Pool Size=200;" providerName="System.Data.SqlClient" />
+    <add name="VIKDb" connectionString="Data Source=#{@vikDB};User Id=***;Password=***;Connect Timeout=30;pooling='true'; Max Pool Size=200;" providerName="System.Data.SqlClient" />
+	  <add name="LoggingDb" connectionString="Data Source=SQL2014-TEST;Initial Catalog=VIK_Applogging;User Id=***;Password=***;Connect Timeout=30;pooling='true'; Max Pool Size=200;" providerName="System.Data.SqlClient" />
+	  <add name="PromotionsDb" connectionString="Data Source=#{@promDB};User Id=***;Password=***;Connect Timeout=30;pooling='true'; Max Pool Size=200;" providerName="System.Data.SqlClient" />
   </connectionStrings>
   <cachingConfiguration defaultCacheManager="Cache Manager">
     <cacheManagers>
